@@ -58,7 +58,10 @@ function addScore() {
     if (name === "") {
         $("name_error").innerText = "Name cannot be empty.";
         hasError = true;
-    }
+    }else if (!isNaN(name)) {
+        $("name_error").innerText = "Name cannot be a number.";
+        hasError = true;
+    }
 
     if (isNaN(score) || score < 0 || score > 100) {
         $("score_error").innerText = "Score must be a number between 0 and 100.";
