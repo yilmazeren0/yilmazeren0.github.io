@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+input {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 200px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.ui-datepicker {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: auto;
+}
+
+.ui-datepicker-header {
+    background: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+    background-color: #ddd;
+}
+
+.ui-datepicker-calendar td {
+    text-align: center;
+    padding: 5px;
+}
+
+.ui-datepicker-calendar a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.ui-datepicker-calendar a:hover {
+    background-color: #d0e9ff;
+}
