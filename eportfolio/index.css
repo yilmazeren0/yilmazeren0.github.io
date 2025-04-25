@@ -174,7 +174,27 @@ nav a:hover {
     width: 2px;
     background-color: var(--border-color);
 }
+.project-links {
+    margin-top: 1rem;
+}
 
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.github-link i {
+    font-size: 1.2rem;
+}
+
+.github-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
 .timeline-item {
     margin-bottom: 2rem;
     position: relative;
