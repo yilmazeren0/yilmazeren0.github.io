@@ -514,6 +514,7 @@ footer {
     
     nav ul {
         text-align: center;
+        flex-direction: column;
     }
     
     nav li {
