@@ -1,0 +1,223 @@
+/* Main color schema of our website. */
+:root {
+    --primary-color: #353636;
+    --secondary-color: #3b1a6e;
+    --dark-background: #2d0249;
+    --light-background: #ecf0f1;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-background);
+    color: var(--text-color);
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Our navigation bar design. */
+nav {
+    background: var(--dark-background);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#login-form{
+    margin-bottom: 15px;
+}
+
+/* Our pages's core part design. */
+.first-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1741203061~exp=1741206661~hmac=a3ab7db9efcbc3f13c5016fb118799a05e9c7aa7054d04ceca5a8695a90b5f7f&w=996');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Project and event cards. */
+.project-card, .event-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover, .event-card:hover {
+    transform: translateY(-10px);
+}
+.event-card img {
+    max-width: 75%;
+    max-height: 350px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 140px;
+}
+
+
+/* Our different button designs. */
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.btn{
+    display: flex; 
+    align-items: center;
+}
+
+/* Footer design. */
+footer {
+    background: var(--dark-background);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Register popup logic. */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content label {
+    margin-bottom: 5px;
+}
+
+.popup-content input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.popup-close:hover {
+    color: #333;
+}
+
+/* Our register is a checkbox actually because of limitation of not using js. So we had to simulate button. */
+.register-btn {
+    margin-left: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 9.7px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.register-btn:hover{
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+#register-trigger {
+    display: none;
+}
+
+#register-trigger:checked ~ .popup {
+    display: flex;
+}

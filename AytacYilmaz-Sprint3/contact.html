@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCollab - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DevCollab</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="events.html">Events</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <div class="first-section">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you!</p>
+    </div>
+
+    <div class="container fade-in">
+        <div class="contact-tabs">
+            <ul>
+                <li><a href="#general-inquiry">General Inquiry</a></li>
+                <li><a href="#project-proposal">Project Proposal</a></li>
+            </ul>
+            
+            <!-- General Inquiry Form Tab -->
+            <div id="general-inquiry">
+                <h2>General Inquiry</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="required" placeholder="Your full name">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" class="required email" placeholder="your.email@example.com">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" class="required" placeholder="What is your inquiry about?">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" class="required" rows="5" placeholder="Please provide details about your inquiry"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Developer Experience:</label>
+                        <div id="experience-slider"></div>
+                        <span id="experience-value">5 years</span>
+                        <input type="hidden" id="experience" name="experience" value="5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Preferred Contact Date:</label>
+                        <input type="text" id="contact-date" name="contact-date" placeholder="Select a date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" id="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Project Proposal Tab -->
+            <div id="project-proposal">
+                <h2>Project Proposal</h2>
+                <form id="project-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="project-name">Your Name:</label>
+                        <input type="text" id="project-name" name="project-name" class="required" placeholder="Your full name">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-email">Email Address:</label>
+                        <input type="email" id="project-email" name="project-email" class="required email" placeholder="your.email@example.com">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-title">Project Title:</label>
+                        <input type="text" id="project-title" name="project-title" class="required" placeholder="Name of your project">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-type">Project Type:</label>
+                        <select id="project-type" name="project-type" class="required">
+                            <option value="">-- Select Project Type --</option>
+                            <option value="web">Web Application</option>
+                            <option value="mobile">Mobile App</option>
+                            <option value="data">Data Science</option>
+                            <option value="ai">AI/ML</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-description">Project Description:</label>
+                        <textarea id="project-description" name="project-description" class="required" rows="5" placeholder="Please describe your project idea"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group skills-section">
+                        <label>Required Skills:</label>
+                        <div id="skills-autocomplete-container">
+                            <input type="text" id="skills-autocomplete" placeholder="Start typing a skill...">
+                        </div>
+                        <div id="selected-skills" class="selected-skills"></div>
+                        <input type="hidden" id="skills-list" name="skills-list">
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit">Submit Project</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DevCollab</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- jQuery Plugin for form validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
