@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is header part -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCollab - Open Source Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <!-- Navigation bar with links -->
+    <header>
+        <div class="logo">DevCollab</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="events.html">Events</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Big title section -->
+    <div class="first-section">
+        <h1>Innovative Open Source Projects</h1>
+        <p>Collaborate, Contribute, and Make a Difference</p>
+    </div>
+    
+    <div class="container fade-in">
+        <!-- Project filtering and search -->
+        <div class="project-filters">
+            <h3>Find The Perfect Project</h3>
+            
+            <div class="filter-row">
+                <span class="filter-label">Categories:</span>
+                <div class="filter-tags project-categories">
+                    <span class="filter-tag active" data-category="all">All</span>
+                    <span class="filter-tag" data-category="web">Web</span>
+                    <span class="filter-tag" data-category="mobile">Mobile</span>
+                    <span class="filter-tag" data-category="ai">AI/ML</span>
+                    <span class="filter-tag" data-category="blockchain">Blockchain</span>
+                </div>
+            </div>
+            
+            <div class="filter-row">
+                <span class="filter-label">Difficulty:</span>
+                <div class="filter-tags project-difficulty">
+                    <span class="filter-tag active" data-difficulty="all">All</span>
+                    <span class="filter-tag" data-difficulty="beginner">Beginner</span>
+                    <span class="filter-tag" data-difficulty="intermediate">Intermediate</span>
+                    <span class="filter-tag" data-difficulty="advanced">Advanced</span>
+                </div>
+            </div>
+            
+            <div class="filter-row">
+                <input type="text" id="project-search" class="search-box" placeholder="Search projects by name or technology...">
+            </div>
+        </div>
+        
+        <h2>Featured Projects</h2>
+        <div class="project-grid" id="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web" data-difficulty="beginner" data-name="DevChat" data-tech="javascript react firebase">
+                <img src="https://img.freepik.com/free-psd/speech-bubble-icon-3d-render-illustration_47987-15253.jpg?ga=GA1.1.1676842344.1734985086&semt=ais_hybrid" 
+                alt="DevChat">
+                <h3>DevChat</h3>
+                <div class="rating-stars">★★★★☆</div>
+                <p>A real-time chat application for developers with advanced collaboration features.</p>
+                <div class="expand-btn">View Details</div>
+                <div class="project-details">
+                    <p><strong>Technologies:</strong> React, Firebase, WebSockets</p>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p><strong>Contributors:</strong></p>
+                    <div class="contributors-list">
+                        <div class="contributor-avatar">JD</div>
+                        <div class="contributor-avatar">AL</div>
+                        <div class="contributor-avatar">SM</div>
+                    </div>
+                </div>
+                <button class="view-project-btn">View Project</button>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" data-category="web" data-difficulty="intermediate" data-name="CodeCollab" data-tech="javascript vue node">
+                <img src="https://img.freepik.com/free-vector/gradient-coding-logo-template_23-2148809439.jpg?t=st=1741204625~exp=1741208225~hmac=61961665d4dbebda388ee4f6de18807a6d1156ff3905af9a2c78cc2b5399aac4&w=740" 
+                alt="CodeCollab">
+                <h3>CodeCollab</h3>
+                <div class="rating-stars">★★★★★</div>
+                <p>A collaborative coding platform with integrated version control and live editing.</p>
+                <div class="expand-btn">View Details</div>
+                <div class="project-details">
+                    <p><strong>Technologies:</strong> Vue.js, Node.js, MongoDB</p>
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <p><strong>Contributors:</strong></p>
+                    <div class="contributors-list">
+                        <div class="contributor-avatar">RJ</div>
+                        <div class="contributor-avatar">KL</div>
+                        <div class="contributor-avatar">MP</div>
+                        <div class="contributor-avatar">TC</div>
+                    </div>
+                </div>
+                <button class="view-project-btn">View Project</button>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" data-category="ai" data-difficulty="advanced" data-name="AI Helper" data-tech="python tensorflow keras machine-learning">
+                <img src="https://img.freepik.com/free-vector/gradient-glowing-particle-face_23-2148292989.jpg?t=st=1741204676~exp=1741208276~hmac=2470c079f2de8422793f93f03f7b12f7ddf3abd08e9bb0a701b8a2b8610d0205&w=1060" 
+                alt="AI Helper">
+                <h3>AI Helper</h3>
+                <div class="rating-stars">★★★★★</div>
+                <p>An AI-powered coding assistant with advanced code suggestion and debugging tools.</p>
+                <div class="expand-btn">View Details</div>
+                <div class="project-details">
+                    <p><strong>Technologies:</strong> Python, TensorFlow, Keras, NLP</p>
+                    <p><strong>Difficulty:</strong> Advanced</p>
+                    <p><strong>Contributors:</strong></p>
+                    <div class="contributors-list">
+                        <div class="contributor-avatar">EL</div>
+                        <div class="contributor-avatar">DK</div>
+                        <div class="contributor-avatar">JH</div>
+                    </div>
+                </div>
+                <button class="view-project-btn">View Project</button>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card" data-category="mobile" data-difficulty="intermediate" data-name="DevTracker" data-tech="flutter dart mobile firebase">
+                <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?size=626&ext=jpg" 
+                alt="DevTracker">
+                <h3>DevTracker</h3>
+                <div class="rating-stars">★★★☆☆</div>
+                <p>A mobile app for tracking coding progress, setting goals and forming habits.</p>
+                <div class="expand-btn">View Details</div>
+                <div class="project-details">
+                    <p><strong>Technologies:</strong> Flutter, Dart, Firebase</p>
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <p><strong>Contributors:</strong></p>
+                    <div class="contributors-list">
+                        <div class="contributor-avatar">NS</div>
+                        <div class="contributor-avatar">RT</div>
+                    </div>
+                </div>
+                <button class="view-project-btn">View Project</button>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card" data-category="blockchain" data-difficulty="advanced" data-name="CryptoCollab" data-tech="solidity ethereum blockchain web3">
+                <img src="https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?w=1380&t=st=1741295646~exp=1741296246~hmac=82d939654bf9d8aaddcbb7e42f8df03f42e558d8a7d687c50381a1a5c75fa053" 
+                alt="CryptoCollab">
+                <h3>CryptoCollab</h3>
+                <div class="rating-stars">★★★★☆</div>
+                <p>A decentralized platform for developer collaboration and project funding.</p>
+                <div class="expand-btn">View Details</div>
+                <div class="project-details">
+                    <p><strong>Technologies:</strong> Solidity, Ethereum, Web3.js</p>
+                    <p><strong>Difficulty:</strong> Advanced</p>
+                    <p><strong>Contributors:</strong></p>
+                    <div class="contributors-list">
+                        <div class="contributor-avatar">BK</div>
+                        <div class="contributor-avatar">JR</div>
+                        <div class="contributor-avatar">AM</div>
+                    </div>
+                </div>
+                <button class="view-project-btn">View Project</button>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card" data-category="web" data-difficulty="beginner" data-name="DevDocs" data-tech="javascript react markdown documentation">
+                <img src="https://img.freepik.com/free-vector/digital-document-icon-flat-design_23-2147849629.jpg?w=740&t=st=1741295703~exp=1741296303~hmac=f54ddbadba095a16900d33c559bfa58168ad169738cdedc3622ac1b9c915f379" 
+                alt="DevDocs">
+                <h3>DevDocs</h3>
+                <div class="rating-stars">★★★★☆</div>
+                <p>A collaborative documentation platform for developer teams with live editing.</p>
+                <div class="expand-btn">View Details</div>
+                <div class="project-details">
+                    <p><strong>Technologies:</strong> React, Markdown, Firebase</p>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p><strong>Contributors:</strong></p>
+                    <div class="contributors-list">
+                        <div class="contributor-avatar">LM</div>
+                        <div class="contributor-avatar">SH</div>
+                        <div class="contributor-avatar">PN</div>
+                    </div>
+                </div>
+                <button class="view-project-btn">View Project</button>
+            </div>
+        </div>
+        
+        <!-- How to contribute section -->
+        <div class="container">
+            <h2>How to Contribute</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>1. Explore</h3>
+                    <p>Browse our open-source projects and find one that interests you.</p>
+                </div>
+                <div class="project-card">
+                    <h3>2. Connect</h3>
+                    <p>Join our Discord community and meet project maintainers.</p>
+                </div>
+                <div class="project-card">
+                    <h3>3. Contribute</h3>
+                    <p>Submit pull requests and help improve existing projects.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Project Details Dialog -->
+    <div id="project-details-dialog" title="Project Details" style="display: none;">
+        <div id="project-details-content"></div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DevCollab</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
