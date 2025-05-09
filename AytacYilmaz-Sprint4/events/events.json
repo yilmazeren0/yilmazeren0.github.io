@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Hackathon 2025",
+      "date": "March 15, 2025",
+      "description": "48-hour coding challenge with real-world problems.",
+      "image": "https://img.freepik.com/free-vector/meet-teacher-flyer-template_742173-15938.jpg?t=st=1746819245~exp=1746822845~hmac=52e294b84c9dada7d78e7470a38675ccd59db5fe1bd4e2fe4d31fcfaf298da15&w=826"
+    },
+    {
+      "title": "Web Dev Workshop",
+      "date": "April 5, 2025",
+      "description": "Hands-on training on latest frontend technologies.",
+      "image": "https://img.freepik.com/free-psd/technology-template-design_23-2151009764.jpg?t=st=1746819373~exp=1746822973~hmac=1f85d12b673f2b259dac03442e3ff248f0057bbf240fb6c3f15862c7e45d953d&w=826"
+    },
+    {
+      "title": "AI & ML Conference",
+      "date": "May 20, 2025",
+      "description": "Discover innovations in artificial intelligence and machine learning.",
+      "image": "https://img.freepik.com/free-vector/artificial-intelligence-technology-poster_23-2150369301.jpg?t=st=1746819162~exp=1746822762~hmac=35ac0e75747b4b6e8246ff35d832d5afbe04baef4200d09278df66240d3621da&w=826"
+    }
+  ]
+  

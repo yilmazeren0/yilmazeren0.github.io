@@ -1,0 +1,118 @@
+.contact-form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+
+.error {
+    border-color: #d9534f !important;
+}
+
+.contact-content {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 30px 20px;
+}
+
+/* jQuery UI Slider styling */
+#experience-slider {
+    margin: 15px 0;
+}
+
+#experience-value {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/* jQuery UI Datepicker styling */
+.ui-datepicker {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* jQuery UI Button set styling */
+#priority-buttons {
+    margin-top: 10px;
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: 0.4em 1em;
+}
+
+/* jQuery UI Dialog styling */
+.ui-dialog {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ui-dialog-titlebar {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+}
+
+/* Response highlight */
+.response-highlight {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4caf50;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Form validation styling */
+label.error {
+    color: #d9534f;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+
+input.error, select.error, textarea.error {
+    border-color: #d9534f !important;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 15px 10px;
+    }
+}

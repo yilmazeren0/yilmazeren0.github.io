@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is header part -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCollab - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="login.css">   
+    <link rel="stylesheet" href="../style.css">
+    
+
+  
+</head>
+<body>
+    <div class="page-content">
+        <header>
+            <div class="logo"><i class="fas fa-code"></i> DevCollab</div>
+            <nav>
+                <a href="../index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="../events/events.html"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="../projects/projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="../contact/contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="../faq/faq.html"><i class="fa-solid fa-question"></i>FAQ</a>
+            </nav>
+        </header>
+
+        <!-- Hidden checkbox for register popup -->
+        <input type="checkbox" id="register-trigger" class="hidden-input">
+
+        <!-- Login form container -->
+        <div class="container">
+            <h1>Login to DevCollab</h1>
+            <form id="login-form">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="fill it with 'testuser' for test" required>
+                    <span class="error-message"></span>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="fill it with 'password123' for test">
+                    <span class="error-message"></span>
+                </div>           
+                <br>
+                <div class="btn">
+                    <button type="submit" id="login-button">Login</button>
+                    <label for="register-trigger" class="register-btn">Register</label>
+                </div>
+            </form>
+            <div id="login-message" class="response-message"></div>
+        </div>
+
+        <!-- Register popup section -->
+        <div class="popup">
+            <div class="popup-content">
+                <label for="register-trigger" class="popup-close">&times;</label>
+                <h2>Register to DevCollab</h2>
+                <form id="register-form">
+                    <div>
+                        <label for="reg-name">Name & Surname:</label>
+                        <input type="text" id="reg-name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div>
+                        <label for="reg-username">Username:</label>
+                        <input type="text" id="reg-username" name="username" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div>
+                        <label for="reg-email">E-mail:</label>
+                        <input type="email" id="reg-email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div>
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" name="password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div>
+                        <label for="reg-confirm-password">Confirm Password:</label>
+                        <input type="password" id="reg-confirm-password" name="confirm-password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" id="register-button">Register</button>
+                    </div>
+                </form>
+                <div id="register-message" class="response-message"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DevCollab</p>
+    </footer>
+
+    <!-- jQuery and jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- jQuery Validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- jQuery Password Strength plugin -->
+    <script src="login.js"></script>
+</body>
+</html>
